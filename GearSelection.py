@@ -12,9 +12,9 @@ min_fos = 1.3 # minimum factor of safety (per gear)
 max_fos = 2.25 # maximum factor of safety (per gear)
 
 # COMBINATION RESTRICTIONS
-min_ratio = 3.4 # minimum viable gear ratio
-max_ratio = 3.6 # maximum viable gear ratio
-max_mass = 4 # maximum mass of all gears (kg)
+min_ratio = 2 # minimum viable gear ratio
+max_ratio = 2.35 # maximum viable gear ratio
+max_mass = 2 # maximum mass of all gears (kg)
 min_length = 7 * 25.4 # minimum center to center length (mm)
 
 # TORQUE!
@@ -173,7 +173,7 @@ def filter_gear_combos(gear_combos):
 
 # WRITE NEW CSV OF GOOD GEAR COMBINATIONS
 def write_gear_sheet(final_combos):
-    with open("Possible Gear Combos", "w") as f:
+    with open("Possible Gear Combos 3.csv", "w") as f:
         w = csv.writer(f)
         # write header row
 
